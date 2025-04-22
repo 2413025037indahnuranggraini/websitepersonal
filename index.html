@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Indah Nur Anggraini</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background: linear-gradient(-45deg, #ff69b4, #ffffff, #87cefa, #ffb6c1);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: #ff1493;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header div {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ff69b4;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #ff1493;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .task-item {
+            background: #fce4ec;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .task-item a {
+            display: inline-block;
+            background: #ff1493;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .task-item a:hover {
+            background: #c71585;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .social a:hover {
+            transform: scale(1.1);
+        }
+
+        .instagram { background-color: #E1306C; }
+        .tiktok { background-color: #000000; }
+        .linkedin { background-color: #2556d3; }
+
+        footer {
+            background-color: #ff1493;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Portofolio Indah Nur Anggraini
+        <div>Pendidikan Teknologi Informasi | Universitas Lampung</div>
+    </header>
+
+    <div class="container">
+        <img src="indah.jpg" alt="Foto Indah" class="profile-img">
+        <h2>Indah Nur Anggraini</h2>
+        <p>NPM: 2413025037</p>
+        <p>Kelas: PTI 2024 A</p>
+
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa Pendidikan Teknologi Informasi 2024 di Universitas Lampung yang sedang mempelajari mata kuliah Grafika Komputer. Website ini menampilkan beberapa tugas saya selama perkuliahan.</p>
+
+        <div class="section">
+            <h2>Tugas Grafika Komputer</h2>
+            <div class="task-gallery">
+                <div class="task-item">
+                    <img src="foto john warnock.jpg" alt="Tugas 1">
+                    <a href="https://drive.google.com/drive/folders/1RA3jxi6Kus5O_1c_Xf5ttEs9zVT5gJWS" target="_blank">Tugas 1: Tokoh Perintis Grafika Komputer</a>
+                </div>
+                <div class="task-item">
+                    <img src="garis dda dan bresenham.jpg" alt="Tugas 2">
+                    <a href="https://drive.google.com/drive/folders/1RFwpZwKuGEfBijsBIN2tUifSDN5T1VeQ" target="_blank">Tugas 2: Algoritma Pembentukan Garis</a>
+                </div>
+                <div class="task-item">
+                    <img src="lingkaran .jpg" alt="Tugas 3">
+                    <a href="https://drive.google.com/drive/folders/1vVJfI7o-NJsLl9OQVXfJdh7N1WryeAeo" target="_blank">Tugas 3: Algoritma Pembentukan Lingkaran </a>
+                </div>
+                <div class="task-item">
+                    <img src="gambar kurva.jpg" alt="Tugas 4">
+                    <a href="https://drive.google.com/drive/folders/1KEW7n4yB4cBXBGC2Mx1t0OROdugDMEJJ" target="_blank">Tugas 4: Algoritma Pembentukan Kurva</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Media Sosial</h2>
+            <div class="social">
+                <a href="https://www.instagram.com/indahhnrr._?igsh=MTFtbTlyc2xjM2wxMQ==" target="_blank" class="instagram">Instagram</a>
+                <a href="https://www.tiktok.com/@ndhnr6?_t=ZS-8utwHHGhMKQ&_r=1" target="_blank" class="tiktok">TikTok</a>
+                <a href="https://www.linkedin.com/in/indah-nur-anggraini-a24a66326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Indah Nur Anggraini
+    </footer>
+
+</body>
+</html>
