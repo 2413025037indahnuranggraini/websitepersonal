@@ -13,16 +13,23 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: black;
-            background: linear-gradient(-45deg, #ff69b4, #ffffff, #87cefa, #ffb6c1);
-            background-size: 400% 400%;
-            animation: gradientBackground 15s ease infinite;
+            color: rgb(0, 0, 0);
+            background-image: url("background.jpg");
+            background-size: 500px; 
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: #ffe6f0; 
+            animation: move-background 15s infinite linear;
         }
 
-        @keyframes gradientBackground {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        @keyframes move-background {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 200px 200px;
+            }
         }
 
         header {
@@ -46,6 +53,9 @@
             margin: auto;
             padding: 40px 20px;
             text-align: center;
+            background-color: rgba(255, 255, 255, 0); 
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         }
 
         .profile-img {
@@ -68,7 +78,7 @@
         }
 
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.8); 
             border-radius: 12px;
             padding: 30px;
             margin: 30px 0;
@@ -76,10 +86,10 @@
         }
 
         .task-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
-            justify-content: center;
             margin-top: 20px;
         }
 
@@ -87,7 +97,7 @@
             background: #fce4ec;
             padding: 15px;
             border-radius: 10px;
-            width: 250px;
+            width: 450px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
@@ -157,6 +167,7 @@
         <div class="section">
             <h2>Tentang Saya</h2>
             <p>Saya adalah mahasiswa Pendidikan Teknologi Informasi 2024 di Universitas Lampung yang sedang mempelajari mata kuliah Grafika Komputer. Website ini menampilkan beberapa tugas saya selama perkuliahan.</p>
+        </div>
 
         <div class="section">
             <h2>Tugas Grafika Komputer</h2>
@@ -170,7 +181,7 @@
                     <a href="https://drive.google.com/drive/folders/1RFwpZwKuGEfBijsBIN2tUifSDN5T1VeQ" target="_blank">Tugas 2: Algoritma Pembentukan Garis</a>
                 </div>
                 <div class="task-item">
-                    <img src="lingkaran .jpg" alt="Tugas 3">
+                    <img src="lingkaran.jpg" alt="Tugas 3">
                     <a href="https://drive.google.com/drive/folders/1vVJfI7o-NJsLl9OQVXfJdh7N1WryeAeo" target="_blank">Tugas 3: Algoritma Pembentukan Lingkaran </a>
                 </div>
                 <div class="task-item">
